@@ -1,0 +1,4 @@
+#Mon Aug 22 09:30:01 EET 2022
+base.0=/home/ahmed/StudioProjects/todo/news_app/build/app/intermediates/dex/profile/mergeDexProfile/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
