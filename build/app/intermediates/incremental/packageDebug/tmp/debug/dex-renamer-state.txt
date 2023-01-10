@@ -1,4 +1,4 @@
-#Tue Sep 20 10:12:53 EET 2022
-base.0=/home/ahmed/StudioProjects/todo/news_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Tue Jan 10 19:14:01 EET 2023
+base.0=C\:\\Users\\ahmed\\OneDrive\\Desktop\\news-app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

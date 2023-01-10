@@ -17,9 +17,7 @@ void navigateTo(context, Widget) {
 
 Widget buildArticlesNews(article, context) {
   //String url = article['urlToImage'].toString();
-  String spare =
-      'https://images.pexels.com/photos/4439425/pexels-photo-4439425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-          .toString();
+
 
   return InkWell(
     onTap: () {
@@ -38,7 +36,7 @@ Widget buildArticlesNews(article, context) {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                    image: NetworkImage(article['urlToImage'].toString() ),
+                    image: NetworkImage(article?['urlToImage'].toString()??'https://www.flaticon.com/free-icon/not-found_2748614?term=not+found&page=1&position=2&origin=search&related_id=2748614'),
                     fit: BoxFit.cover,
                   ))),
           const SizedBox(

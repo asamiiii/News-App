@@ -5,7 +5,6 @@ import 'package:news_app/Local/CashHelper.dart';
 import 'package:news_app/Network/dioHelper.dart';
 import 'package:news_app/cubit/cubit.dart';
 import 'package:news_app/screens/home_layout.dart';
-
 import 'cubit/bloc-observer.dart';
 import 'cubit/state.dart';
 
@@ -35,20 +34,16 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => NewsCubit()
-            ..getSports()
-            ..getBusiness()
-            ..getScince()
-            
-        ),
+            create: (context) => NewsCubit()
+              ..getSports()
+              ..getBusiness()
+              ..getScince()),
         BlocProvider(
           create: (context) => ThemeCubit()
             ..changeMode(
               fromShared: isDark,
             ),
-            
         ),
-        
       ],
       child: BlocConsumer<ThemeCubit, NewsAppStates>(
         listener: (context, state) {},
@@ -69,9 +64,7 @@ class MyApp extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
                   actionsIconTheme: IconThemeData(color: Colors.black87),
-                  iconTheme: IconThemeData(color:Colors.black12 )
-                  ),
-                  
+                  iconTheme: IconThemeData(color: Colors.black12)),
               bottomNavigationBarTheme: const BottomNavigationBarThemeData(
                   backgroundColor: Colors.black54,
                   unselectedIconTheme: IconThemeData(color: Colors.grey)),
@@ -97,8 +90,7 @@ class MyApp extends StatelessWidget {
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
-                        iconTheme: IconThemeData(color:Colors.white )
-                        ),
+                    iconTheme: IconThemeData(color: Colors.white)),
                 textTheme: const TextTheme(
                   headline1: TextStyle(
                       color: Colors.white,
